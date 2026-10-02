@@ -1,0 +1,26 @@
+{
+  "name": "freshcart-sprint2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FreshCart E-Commerce Sprint 2 catalog foundation",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "jest --runInBand",
+    "seed": "node seeds/seed.js",
+    "migrate": "node migrations/run.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
